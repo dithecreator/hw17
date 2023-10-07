@@ -7,6 +7,7 @@
 
 #include "Bankomat.hpp"
 #include <iostream>
+#include <string>
 using namespace std;
 
 
@@ -20,6 +21,11 @@ bool Bankomat:: checkNominal(int userMoney){
         }
     }
            return false;
+}
+
+string Bankomat:: toString(int userMoney){
+    string result = to_string(userMoney);
+       return result;
 }
 
 void Bankomat:: inputCash(){

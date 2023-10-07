@@ -8,7 +8,8 @@
 #ifndef Bankomat_hpp
 #define Bankomat_hpp
 #include <stdio.h>
-
+#include <string>
+using namespace std;
 class Bankomat{
     int id;
     int currentSum = 100000;
@@ -20,6 +21,7 @@ class Bankomat{
    void inputCash(); //ложим деньги
     void getCash(); //снимаем деньги
     bool checkNominal(int userMoney); //проверяем номинал
+    string toString(int userMoney);
 };
 
 #endif /* Bankomat_hpp */
